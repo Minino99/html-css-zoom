@@ -35,7 +35,6 @@ body {
 }
 
 .body-container {
-    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +45,7 @@ body {
 
 .card {
     position: relative;
+    overflow: hidden;
 }
 
 .user {
@@ -55,17 +55,19 @@ body {
     color: white;
     padding: 5px;
     background-color: rgba(125, 125, 125, 0.50);
-
 }
 
 .footer-container {
     background-color: var(--dark-grey);
-    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     padding-right: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .flex{
@@ -82,10 +84,9 @@ body {
 
 .footer-btn{
     color: red;
-    display: inline-block;
-    line-height: 15vh;
     padding: 0 20px;
     background-color: var(--grey);
+    line-height: 100%;
 }
 
 .tools-icon .fa-solid.fa-share-from-square{
